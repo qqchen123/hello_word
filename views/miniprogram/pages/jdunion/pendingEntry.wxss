@@ -1,0 +1,73 @@
+/* pages/jdunion/pendingEntry.wxss */
+.bgcolor {
+  width: 750rpx;
+  height:100%;
+  /* background: #F9F9F9; */
+}
+.assess {
+  position: relative;
+  width: 90%; 
+  height: 200rpx;
+  border: 2rpx solid gray;
+  margin-top: 3%;
+	display: inline-block;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  border-radius: 10rpx;
+  margin-left: 35rpx;
+}
+.assess_css {
+  width: 85%;
+  height: 773rpx;
+  margin-left: 7%;
+}
+.daijinj {
+  display: block;
+   font-size: 30rpx;
+   font-weight: 15rpx;
+   margin-top: 5%;
+   margin-left: 30rpx;
+}
+.suhomecss {
+  display: block;
+  font-size: 25rpx;
+  margin-left: 5%;
+  margin-top: 20rpx;
+}
+.make_entry {
+  position: absolute;
+  width: 25%;
+  height: 60rpx;
+  font-size: 25rpx;
+  background: #01A3D4;
+  color: white;
+  margin-left: 65%;
+}
+.weibu {
+  margin-top: 12%;
+  width: 750rpx;
+  height: 100rpx;
+  background: #f2f2f2;
+}
+.weibu_css {
+  display: inline-block;
+  margin-left: 20%;
+}
+.weixz {
+  margin-top: 10rpx;
+  width: 50rpx;
+  height: 45rpx;
+  margin-left: 10%;
+}
+.hous_page {
+  display: block;
+  font-size: 20rpx;
+  color: #989898;
+  margin-left: 10%;
+}
+.weixz:hover {
+  width: 50rpx;
+  height: 45rpx;
+  background: black;
+}

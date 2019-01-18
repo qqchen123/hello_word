@@ -1,0 +1,10 @@
+<view>1 显示完后再显示</view>
+<view class="example">
+  <view class="marquee_box">
+    <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+      {{text}}
+    </view>
+  </view>
+</view>
+
+<view style="text-align: center;"> <label style="color:{{color}};">我会变色</label> <button bindtap="clickRed">变红</button> <button bindtap="clickgreen">变绿</button></view>

@@ -1,0 +1,265 @@
+/* pages/jdunion/housinformation.wxss */
+.customs_heard {
+  width: 100%;
+  height: 200rpx;
+  background: gray;
+}
+.waiyuan {
+  display: inline-block;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50rpx;
+  border: 5rpx white dashed;
+  margin-left:10%;
+}
+.wangcimg {
+  width: 80rpx;
+  height: 80rpx;
+}
+.waiyuan3 {
+  display: inline-block;
+  width: 85rpx;
+  height: 85rpx;
+  border-radius: 50rpx;
+  border: 0rpx white dashed;
+  margin-top: 30rpx;
+  margin-left: 30%;
+}
+.wuwaiyan_css {
+  position: absolute;
+  top: 10rpx;
+  left: 260rpx;
+}
+.wuwaiyan_css2 {
+  position: absolute;
+  top: 35rpx;
+  left: 600rpx;
+}
+.rund_nei {
+  width: 65rpx;
+  height: 65rpx;
+  background: white;
+  border-radius: 50rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  line-height: 65rpx;
+  text-align: center;
+  font-size: 25rpx;
+}
+.fileimage2 {
+   display: block;
+   font-size: 25rpx;
+   color: #cccccc;
+   margin-top: 30rpx;
+   margin-left: -40rpx;
+}
+.waiyangma {
+  display: inline-block;
+}
+.line_css {
+  position: absolute;
+  display: inline-block;
+  width: 140rpx;
+  border:3rpx white dashed;
+  margin-top: 10%;
+  margin-left: -15rpx;
+}
+.line_css2 {
+  position: absolute;
+  display: inline-block;
+  width: 160rpx;
+  border:3rpx white dashed;
+  margin-left: 260rpx;
+  margin-top: 10%;
+}
+.nei_din {
+  display: inline-block; 
+}
+.fileimage {
+   display: block;
+   font-size: 25rpx;
+   color: #cccccc;
+   margin-top: 20rpx;
+   margin-left: 30rpx;
+}
+.real_information {
+  width: 93%;
+  height: 100%;
+  border: 0rpx solid gray;
+  margin-top: 2%;
+	display: inline-block;
+  border-radius: 15rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+  margin-left: 30rpx;
+}
+.hone_filin {
+   display: block;
+   font-weight: bold;
+   margin-left: 30%;
+   margin-top: 20rpx;
+}
+.home_address {
+  display: inline-block;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+}
+.sousuo {
+  display: inline-block;
+  width: 40rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-top: 40rpx;
+  margin-left: -60rpx;
+}
+.xiala_sousuo {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 630rpx;
+  margin-top: -15rpx;
+}
+.sousuo_left {
+  display: inline-block;
+  width: 40rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-left: 45rpx;
+}
+/* 下拉 */
+.lable_chocse {
+  display: inline-block;
+  width: 80rpx;
+  height: 40rpx;
+  border: 0rpx red solid;
+}
+.xiala_right {
+  position: absolute;
+  display: inline-block;
+  width: 300rpx;
+  border: 0rpx #169BD5 solid;
+  /* margin-left: 70rpx; */
+}
+.lbale_xlala_right {
+   display: inline-block;
+   margin-left: 340rpx;
+   margin-top: -10rpx;
+}
+.lable_xlala_left {
+   display: inline-block;
+   margin-top: -10rpx;
+   margin-left: 10rpx;
+}
+.lable_wan {
+  position: absolute;
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  font-size: 30rpx;
+}
+.yongtu {
+  margin-left: 350rpx;
+}
+.sousuodata {
+  display: inline-block;
+  width: 40rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-left:40rpx;
+}
+.lable_data {
+  font-size: 30rpx;
+  position: absolute;
+  margin-left: -60rpx;
+}
+.sousuo_wan {
+  position: absolute;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.yongtu_css {
+  margin-left: 350rpx;
+}
+.input_address {
+  display: inline-block;
+  font-size: 25rpx;
+  border: 1rpx solid #CCCCCC;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-left: 0rpx;
+  margin-left: 20rpx;
+  width: 70%;
+}
+.input_diya {
+  display: inline-block;
+  width: 150rpx;
+}
+.diya_css {
+  display: inline-block;
+}
+.font_size {
+  display: inline-block;
+  font-size: 30rpx;
+}
+.input_size {
+  display: inline-block;
+  font-size: 25rpx;
+  border: 1rpx solid #CCCCCC;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-left: 0rpx;
+  width: 130rpx;
+}
+.font_color {
+  color: #169CD2;
+}
+.jiah_css {
+  margin-top: 2%;
+  width: 200rpx;
+  height: 180rpx;
+  background: #f9f9f9;
+  margin-left: 10%;
+  border: 0rpx red solid;
+}
+.jiah_tup {
+  width: 53rpx;
+  height: 53rpx;
+  margin-top: 12%;
+  margin-left: 38%;
+}
+.click_tup {
+  display: block;
+  font-size: 20rpx;
+  color: #cccccc;
+  margin-left: 20%;
+  margin-top: 10rpx;
+}
+.click_delete {
+  margin-left:10%;
+}
+.imgs_css {
+  display: inline-block;
+  width: 200rpx;
+  height:160rpx; 
+}
+.assess_button {
+  width: 40%;
+  background: #169BD5;
+  color: white;
+  margin-top: 10%;
+}
+.slt_tup {
+  width: 100%;
+  border: 0rpx solid gray;
+  /* height: 100rpx; */
+  margin-top: 3%;
+	display: inline-block;
+  border-radius: 15rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+}
+.hous_image_css {
+  margin-left: 40rpx;
+}

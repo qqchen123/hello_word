@@ -1,0 +1,135 @@
+<!--报单流程  上传房本信息 -->
+<view>
+  <!--报单head -->
+  <view class='customs_heard'>
+    <view class='waiyangma'>
+      <view class='waiyuan3'>
+        <image src='{{allImgs}}完成.png' class='wangcimg'></image>
+      </view>
+      <text class='fileimage'>填写申贷信息</text>
+    </view>
+    <view class='line_css'></view>
+    <view class='wuwaiyan_css'>
+      <view class='waiyuan3'>
+        <image src='{{allImgs}}完成.png' class='wangcimg'></image>
+      </view>
+      <text class='fileimage'>上传身份证信息</text>
+    </view>
+    <view class='line_css2'></view>
+    <view class='wuwaiyan_css2'>
+      <view class='waiyuan'>
+        <view class='rund_nei'>3</view>
+      </view>
+      <text class='fileimage2'>填写房本信息</text>
+    </view>
+  </view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!-- 填写申贷信息 center -->
+    <view class='real_information'>
+      <navigator url='/pages/jdunion/assresults'>
+        <view class='address'>
+          <text class='home_address'>房屋坐落：</text>
+          <input type='text' placeholder="请输入小区名称/地址" class='input_address' disabled="true" bindinput='bindHouseName' value="{{houseName}}" />
+          <image src='{{allImgs}}搜索.png' class='sousuo'></image>
+        </view>
+      </navigator>
+      <view class='address'>
+        <text class='home_address'>建筑面积：</text>
+        <input type='text' placeholder="请输入建筑面积" class='input_address' name='house_area' value="{{house_area}}" type='digit' />
+        <label class='sousuo lable_data'>m²</label>
+      </view>
+      <view class='address'>
+        <text class='home_address'>房屋朝向：</text>
+        <picker bindchange="towardChange" value="{{toward}}" range="{{towardArray}}" mode="selector" class='input_address font_color' name="toward">
+           <label class='lable_chocse'>{{toward}}</label>
+          <view class='xiala_right'>
+              <label class='lbale_xlala_right iconfont icon-select'></label>
+            </view>
+        </picker>
+      </view>
+      <view class='address'>
+        <text class='home_address'>所在楼层：</text>
+        <input placeholder="请输入所在楼层" class='input_address' type='digit' name='floor' value='{{floor}}'/>
+        <label class='sousuo lable_data'>层</label>
+      </view>
+      <view class='address'>
+        <text class='home_address'>楼层总数：</text>
+        <input placeholder="请输入总楼层" class='input_address' type='digit' name='totalfloor' value='{{totalfloor}}' />
+        <label class='sousuo lable_data'>层</label>
+      </view>
+      <view class='address'>
+        <text class='home_address'>竣工日期：</text>
+        <!-- <input type='number' class='input_address' name='finish_date' placeholder="请输入竣工日期"  value="{{finish_date}}"/> -->
+        <!-- <picker
+                    mode="date"
+                    value="{{finish_date}}"
+                    start="1900"
+                    end="2018"
+                    fields="year"
+                    bindchange="bindDateChange"
+                    class='input_address'
+                    name='finish_date'
+               class='input_address font_color' >
+                    <view class="picker">{{finish_date}}</view>
+                </picker> -->
+        <picker bindchange="finish_dateChange" class="input_address font_color" name='finish_date' value="{{finish_date}}" range="{{array}}">
+          <view>
+            <!-- {{array[index]}} -->
+              <label class='lable_chocse'> {{finish_date}}</label>
+          </view>
+        </picker>
+        <label class='sousuo lable_data'>年</label>
+      </view>
+      <view class='address'>
+        <text class='home_address'>规划用途：</text>
+        <picker bindchange="gui_hua_yong_tuChange" value="{{gui_hua_yong_tu}}" range="{{gui_hua_yong_tuArray}}" mode="selector" class='input_address font_color' name="gui_hua_yong_tu">
+           <label class='lable_chocse'>{{gui_hua_yong_tu}}</label>
+           <view class='xiala_right'>
+              <label class='lbale_xlala_right iconfont icon-select'></label>
+            </view>
+        </picker>
+      </view>
+      <!-- <view class='address'>
+             <text class='home_address'>抵押类型：</text>
+               <picker bindchange="bindPickerqingk" value="{{qingIndex}}" range="{{qingkArray}}"  class='input_address font_color input_diya' name='di_ya'> 
+             {{qingkArray[qingIndex]}} 
+             <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image>
+             </picker>
+              <view class='diya_css' wx:if="{{diya_mon_show}}">
+                  <text class='font_size'>一抵余额：</text>
+                  <input type='text' placeholder="一抵余额" class='input_size font_size' name="yidi_yue" value='{{yidi_yue}}'/>
+                  <label class='sousuo_wan'>万</label>
+              </view>
+        </view> -->
+      <text class='home_address'>房本证照片（必填）：</text>
+      <view class='address'>
+        <view class='jiah_css' bindtap="chooseimage">
+          <image src="{{allImgs}}加.png" class='jiah_tup'></image>
+          <text class='click_tup'>点击添加图片</text>
+          <text class='click_tup click_delete'>（长按图片删除）</text>
+          <!-- <text>长按图片删除</text> -->
+        </view>
+        <view class='slt_tup'>
+          <view class='hous_image_css'>
+            <block wx:for="{{pics}}" wx:for-item="image" wx:for-index="index">
+              <image class='imgs_css' mode="aspecFill" src="{{image}}" data-src="{{image}}" data-index="{{index}}" bindtap="previewImage" bindlongpress="longPress"></image>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 按钮 -->
+    <!-- <navigator url='/pages/jdunion/customsdeform'> -->
+    <view>
+      <button class='assess_button' form-type='submit'>提 交</button>
+    </view>
+    <!-- </navigator> -->
+  </form>
+</view>
+<modal hidden="{{hidden}}" title="估价" confirm-text="确定" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" no-cancel="{{nocancel}}">
+
+  <view>单价：{{diYaDanJia}}元/m²</view>
+  <view>总价：{{diYaZongJia}}万元</view>
+  <view>折扣：{{fangDaiZheKou}}</view>
+  <view>折扣总价：{{ZheKouZongJia}}万元</view>
+</modal>

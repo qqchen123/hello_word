@@ -1,0 +1,34 @@
+<!-- 机构审核评定-->
+<view class='bgcolor'>
+    <view class='shenhe'>
+        <!-- wx:if="{{diYaDanJia}}" -->
+        <view  class='order_show'>
+            <view wx:if="{{diYaDanJia}}">
+            <text class='shenhe_font'>
+                <!-- 单价： 27021 元/m² -->
+                初评房产评估单价： {{diYaDanJia}} 元/m²
+            </text>
+            <text class='shenhe_font'>
+                <!-- 总价：270 万元 -->
+                初评房产评估总价：{{diYaZongJia}} 万元
+            </text>
+            <text class='shenhe_font'>
+                <!-- 可贷成数：0.7  -->
+                预估最高可贷成数：{{fangDaiZheKou}}成
+            </text>     
+            <text class='shenhe_font'>
+                <!-- 可贷金额：189 万元 -->
+                预估最高可贷金额：{{ZheKouZongJia}} 万元
+            </text>
+             </view>
+            <text class='ins_dudits'>
+               我司审核评定中......
+           </text>
+          
+           
+        </view>
+    </view>
+    <view>
+       <button class='query_button' bindtap='jumptohome'>确定</button>
+    </view>
+</view>

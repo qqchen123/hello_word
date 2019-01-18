@@ -1,0 +1,12 @@
+<view class='view_login'>
+     <image src='/img/logo.png' class='logo_css'></image>
+     <view>
+          <text class='account_num'>账号：</text> 
+          <input type='text' placeholder="请输入账号" class='input_address'/>
+     </view>
+      <view>
+          <text class='account_num'>密码：</text> 
+          <input type='text' placeholder='请输入密码' class='input_address'/>
+     </view>
+     <button class='login'>登 录</button>
+</view>

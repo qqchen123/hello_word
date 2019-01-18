@@ -1,0 +1,140 @@
+<!--报单流程一 -->
+<view class='bgcolor'>
+      <!--报单head -->
+     <view class='customs_heard'>
+        <view class='waiyangma'>
+            <view class='waiyuan'>
+               <view class='rund_nei'>1</view>
+           </view>
+           <text class='fileimage'>填写申贷信息</text>
+        </view>
+        <view class='line_css'></view>
+        <view class='wuwaiyan_css'>
+           <view class='rund_nei neiyuan_css'>2</view>
+           <text class='fileimage2'>上传身份证信息</text>
+        </view>
+        <view class='line_css2'></view>
+         <view class='wuwaiyan_css2'>
+           <view class='rund_nei neiyuan_css'>3</view>
+           <text class='fileimage2'>填写房本信息</text>
+        </view>
+     </view>
+     <!-- 填写申贷信息 center -->
+     <view class='real_information'>
+      <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class='address'>
+             <text class='home_address'>  申 贷 人 ：</text>
+             <input type='text' placeholder="请输入申请人姓名" class='input_address' name="user_name"/>
+        </view>
+        <view class='address'>
+             <text class='home_address'>职业类型：</text>
+             <picker mode = "selector" value="{{timesindex}}" bindchange="bindDateChange" range="{{timesArray}}" class='input_address font_color' name="zhiye_type">  
+              <label class='lable_chocse'> {{timesArray[timesindex]}}</label>
+              <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+               <view class='xiala_right'>
+                    <label class='lbale_xlala_right iconfont icon-select'></label>
+               </view>
+            </picker>   
+        </view>
+        <view class='address'>
+             <text class='home_address'>申贷金额：</text>
+             <input type='number' placeholder="请输入金额" class='input_address' name="get_money" type='digit'/>
+             <label class='sousuo sou2'>万元</label>
+        </view>
+        <view class='address'>
+             <text class='home_address'>借款类型：</text>
+             <!-- <picker bindchange="bindPickerChange" value="{{objectIndex}}" range="{{objectArray}}" mode = "selector" class='input_address font_color' name="get_money_type"> 
+             {{objectArray[objectIndex]}} 
+             </picker>
+              <image src='/img/下拉.png' class='sousuo'></image> -->
+              <picker bindchange="bindPickerChange" value="{{objectIndex}}" range="{{objectArray}}"  class='font_color input_diya' name='get_money_type'> 
+                   <label class='lable_chocse'>{{objectArray[objectIndex]}}</label>
+                   <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+                    <view class='xiala_right'>
+                         <label class='lable_xlala_left iconfont icon-select'></label>
+                    </view>
+              </picker>
+             <view class='diya_css' wx:if="{{shangja_mon_show}}">
+                <text class='font_size'>上家余额：</text>
+                <input type='text' placeholder="输入余额" class='input_size font_size' name="pre_yu_e" type='digit'/>
+                <label class='sousuo lable_data'>万</label>
+            </view>
+        </view>
+        <view class='address'>
+             <text class='home_address'>抵押类型：</text>
+             <picker bindchange="bindPickerqingk" value="{{qingIndex}}" range="{{qingkArray}}"  class='font_color input_diya' name='di_ya_type'> 
+                <label class='lable_chocse'> {{qingkArray[qingIndex]}}</label>
+                <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+                 <view class='xiala_right'>
+                         <label class='lable_xlala_left iconfont icon-select'></label>
+                  </view>
+             </picker>
+            <view class='diya_css' wx:if="{{diya_mon_show}}">
+                <text class='font_size'>一抵余额：</text>
+                <input type='text' placeholder="一抵余额" class='input_size font_size' name="yidi_yue" type='digit'/>
+                 <label class='sousuo lable_data'>万</label>
+            </view>
+        </view>
+        <view class='address'>
+             <text class='home_address'>申请期限：</text>
+               <picker bindchange="shengqPickerqingk" value="{{shenqingIndex}}" range="{{shenqingdataArray}}" mode = "selector" class='input_address font_color' name="get_money_term"> 
+               <label class='lable_chocse'>{{shenqingdataArray[shenqingIndex]}} </label>
+             <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+               <view class='xiala_right'>
+                    <label class='lbale_xlala_right iconfont icon-select'></label>
+               </view>
+             </picker>
+        </view>
+        <view class='address'>
+               <text class='home_address'>房产类型：</text>
+               <picker bindchange="housePickerqingk" value="{{houseIndex}}" range="{{houseArray}}" mode = "selector" class='input_address font_color' name="house_type"> 
+                  <label class='lable_chocse'>{{houseArray[houseIndex]}}</label>
+                  <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+                  <view class='xiala_right'>
+                    <label class='lbale_xlala_right iconfont icon-select'></label>
+                  </view>
+               </picker>
+        </view>
+        <!-- 选择产品的类型-->
+        <view>
+            <view class='class_chooce'>
+                <text class='home_address'>产品属性：</text>
+            </view>
+            <view class='class_radio'>
+                <radio-group bindchange="radioChange" name="product_type">
+                  <label class="radio" wx:for="{{items}}" class='label_radio'>
+                    <radio value="{{item.name}}" checked="{{item.checked}}" class='radio_cssd' name="product_type"/>{{item.value}}
+                  </label>
+              </radio-group>
+          </view>
+        </view>
+        <!--分类选择-->
+       <view id="deg_code" wx:if="{{deg_code_show}}">
+          <view class='address2'>
+               <text class='home_address2'>机构代码：</text>
+               <picker bindchange="codePickerqingk" value="{{codeIndex}}" range="{{codeArray}}" mode = "selector" class='input_address2 font_color' name="jg_code"> 
+               <label class='lable_chocse'>  {{codeArray[codeIndex]}}</label>
+             <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+               <view class='xiala_right'>
+                    <label class='lable_xlala_left lable_jigou iconfont icon-select'></label>
+                </view>
+             </picker>
+           </view>
+          <view class='address2'>
+               <text class='home_address2'>产品名称：</text>
+               <picker bindchange="cpnamePickerqingk" value="{{cpnameIndex}}" range="{{cpnameArray}}" mode = "selector" class='input_address2 font_color' name="product_name"> 
+                 <label class='lable_chocse'>{{cpnameArray[cpnameIndex]}}</label>
+             <!-- <image src='{{allImgs}}下拉.png' class='xiala_sousuo'></image> -->
+                  <view class='xiala_right'>
+                    <label class='lable_xlala_left lable_jigou iconfont icon-select'></label>
+                </view>
+             </picker>
+           </view>
+        </view>
+        <!-- 按钮 -->
+        <view>
+              <button class='assess_button' form-type="submit">下一步</button>
+        </view>
+      </form>
+    </view>
+</view>

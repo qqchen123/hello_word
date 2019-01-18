@@ -1,0 +1,1 @@
+<textarea class="{{class}}" rows="{{rows}}" cols="{{cols}}" style="resize:none;">{{textareas}}</textarea>

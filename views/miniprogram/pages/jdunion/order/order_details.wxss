@@ -1,0 +1,142 @@
+Page {
+  width: 750rpx;
+  height: 100%;
+  background: #F9F9F9;
+}
+/* 初评失败 */
+.pa_fail {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-left: 40%;
+} 
+/* 补件 */
+.patch {
+   width: 180rpx;
+   height: 60rpx;
+   line-height: 60rpx;
+   font-size: 27rpx;
+   background: #01A3D4;
+   color: white;
+   margin-left: 65%;
+} 
+/* 订单内容 */
+ .assess {
+  position: relative;
+  width:100%; 
+  height:100%;
+  margin-top: 3%;
+	display: inline-block;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+/* lable字体 */
+ .suhomecss {
+  display: block;
+  font-size: 25rpx;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.assess_css {
+  width: 750rpx;
+  height: 270rpx;
+} 
+/* 显示隐藏的样式 */
+.time_margin {
+  margin-top: 6%;
+}
+.form_information {
+  background-color: #fff; 
+  display: flex; 
+  justify-content: space-between;
+  width: 92%;
+  padding: 0 4%; 
+  height: 80rpx; 
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.df_information {
+  display: block;
+}
+.waibain_line {
+  display: inline-block;
+  position: absolute;
+  height: 45rpx; 
+  border: 1rpx #999 solid; 
+  margin-left: 19rpx;
+  margin-top: 52rpx;
+}
+.left {
+  display: inline-block;
+  margin-top: -5rpx;
+}
+.line_left {
+  display: inline-block;
+  width: 750rpx;
+  border:3rpx solid #999;
+  margin-left: 50rpx;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-bottom: 0rpx;
+}
+.df_house_class {
+  width: 92%;
+  height: 60rpx; 
+  line-height: 60rpx;
+  margin-left: 55rpx;
+  font-size: 30rpx;
+}
+.show_time_css {
+  width: 750rpx;
+  height: 100%;
+  background-color:white;
+  margin-top: -20rpx;
+}
+.lable_time_css {
+  display: inline-block;
+  font-size: 23rpx;
+  margin-left: 200rpx;
+}
+.form_information .icon-xiala ,.icon-shangjiantou { 
+      color: #999;
+      font-size: 28rpx;
+} 
+/* 时间条样式 */
+.weui-cell-third{
+  background: #fff;
+}
+.weui-cell-list{
+  background: #fff;
+  margin: 5px 50px 5px 50px;
+}
+.weui-cell-line{
+/* width: 100px; */
+  margin-left: 5px;
+  border-left: 1px solid #ddd;
+  height: 100px; 
+  background: #fff
+}
+.weui-cell-circle{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  border-color: blue;
+}
+.weui-cell-time{
+  /* width: 50px; */
+  float: left;
+  font-size:14px;
+  padding-left: 15px;
+  width: 72px;
+}
+.weui-cell-event{
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.weui-cell-name{
+font-size:14px;
+height:23px;
+margin-left: 100px;
+}

@@ -1,0 +1,7 @@
+# 猫池定时任务
+# */1 * * * * /usr/local/php/bin/php /www/fms/index.php CatPool sms_in_sqlserver >> /www/shared/logs/catpool.log #每分钟猫池增量短信mysql入sqlserver
+# */5 * * * * /usr/local/php/bin/php /www/fms/index.php CatPool sim_in_sqlserver >> /www/shared/logs/catpool.log #每5分钟猫池卡的状态mysql入sqlserver
+
+0 8,9 * * * /usr/local/php/bin/php /www/fms/index.php CatPool update_tc_money >> /www/shared/logs/catpool.log #每天7、8点短信获取套餐价格入mysql
+0 9,10 * * * /usr/local/php/bin/php /www/fms/index.php CatPool update_money >> /www/shared/logs/catpool.log #每天8、9点短信获取套餐价格入mysql
+# 0 9 * * * php /www/fms/index.php CatPool autoCheckAndPay >> /www/shared/logs/catpool.log #每天9点轮询余额 低于阀值充值（含update_money）

@@ -1,0 +1,14 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class='view_login'>
+      <image src='{{allImgs}}logo.png' class='logo_css'></image>
+      <view>
+            <text class='account_num'>账号：</text> 
+            <input type='text' placeholder="请输入账号" class='input_address' bindinput ="nameInput"/>
+      </view>
+        <view>
+            <text class='account_num'>密码：</text> 
+            <input type='text' password="true" placeholder='请输入密码' class='input_address'   bindinput ="passwordInput"/>
+      </view>
+      <button  class='login' form-type="submit">登 录</button>
+  </view>
+</form>

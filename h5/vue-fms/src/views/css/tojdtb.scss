@@ -1,0 +1,29 @@
+.background {
+   height: rem(1336);
+   background: url(i/reg.jpg) no-repeat fixed top;
+   background-size:100% 100%;
+   -moz-background-size:100% 100%;
+}
+.biank {
+  margin-top: rem(300);
+  margin-left: 13%;
+  width: rem(550);
+  height: rem(600);
+  border: rem(1) #31c7f0 solid;
+}
+.anniu {
+  width: rem(400);
+  height: rem(70);
+  background: #31c7f0;
+  margin-left: 13%;
+  margin-top: rem(140);
+  border-radius:10px;
+}
+.info-btn {
+    width: rem(400);
+    height: rem(70);
+    font-size: rem(30);
+    color: white;
+    text-align:center;
+    line-height:rem(60);
+}

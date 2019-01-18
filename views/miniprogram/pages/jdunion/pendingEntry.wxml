@@ -1,0 +1,22 @@
+<!-- 预约订单-->
+<view class='bgcolor'>
+    <!--接口的接入-->
+    <view class='assess'>
+        <label class='daijinj'>待进件</label>
+        <label class='suhomecss'>等待预约进件</label>
+        <button class='make_entry'>预约进件</button>
+    </view>
+    <view class='assess assess_css'>
+        <label class='suhomecss'>订单编号：RC121212112</label>
+        <label class='suhomecss'>日期： 2018-12-01</label>
+        <label class='suhomecss'>申请人：张三</label>
+        <label class='suhomecss'>身份证：48888888888</label>
+        <label class='suhomecss'>可贷金额：300万</label>
+        <label class='suhomecss'>房产地址：桂林路99号</label>
+        <label class='suhomecss'>申贷金额：  </label>
+        <label class='suhomecss'>借款类型： 转单</label>
+        <label class='suhomecss'>抵押类型：一抵</label>
+        <label class='suhomecss'>申请期限：6个月</label>
+        <label class='suhomecss'>房产类型：公寓</label>
+    </view>
+</view>

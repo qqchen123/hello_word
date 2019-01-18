@@ -1,0 +1,148 @@
+/* pages/jdunion/homepage.wxss */
+.bgcolor {
+  width: 750rpx;
+  height:100%;
+  /* background: #F9F9F9; */
+}
+.view_lunb {
+  position: relative;
+  width: 750rpx;
+  height: 100%;
+  border: 0rpx red solid; 
+  top: -50rpx;
+}
+.image_css {
+  position: absolute;
+  width: 750rpx;
+  height: 100%; 
+  left: -1rpx;
+}
+.font_boll {
+  position: relative;
+  width:750rpx;
+  height: 50rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+  margin-right: 26px;
+  top: -47rpx;
+}
+.laba {
+    position: absolute;
+    display: inline-block;
+    width: 25rpx;
+    height: 25rpx;
+    margin-left: 15%;
+    margin-top: 15rpx;
+}
+.font_xibao {
+    position: absolute;
+    display: inline-block;
+    font-size: 25rpx;
+    margin-left: 35%;
+    margin-top: -20rpx;
+}
+/* 评估报单阴影边框 */
+/* .assess {
+  position: relative;
+  width: 90%; 
+  height: 260rpx;
+  border: 5rpx solid #F2F2F2;
+  margin-top: 3%;
+	display: inline-block;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  border-radius: 25rpx;
+  margin-left: 35rpx;
+} */
+
+/* 报单评估css */
+/* .huantiao {
+  position: absolute;
+  width: 232rpx;
+  height: 75rpx;
+  margin-left: 470rpx;
+  margin-top: 20rpx;
+}
+.success_css {
+  position: absolute;
+  margin-left: 495rpx;
+  margin-top: 30rpx;
+  font-size: 20rpx;
+  color: white;
+}
+.myassess {
+   display: block;
+   margin-top: 8%;
+   margin-left: 5%;
+   font-weight: bold;
+   font-size: 45rpx;
+} 
+.suhomecss {
+  display: block;
+  font-size: 25rpx;
+  margin-left: 5%;
+  margin-top: 20rpx;
+} */
+.declaration_form_c {
+  /* border:  1rpx #989898 solid;  */
+  width: 750rpx;
+  height: 500rpx;
+}
+.gree_border {
+   position: relative;
+   display:inline-block; 
+   width: 363rpx;
+   height: 297rpx;
+   margin-left: 10rpx;
+   background: #53c3df;
+}
+.black_border {
+  background: #3cbca7;
+}
+.image_big {
+  width: 99rpx;
+  height: 111rpx;
+  margin-top: 25%;
+  margin-left: 37%;
+} 
+ .my_assess {
+  position: absolute;
+  width: 363rpx;
+  height: 43rpx;
+  color: white;
+  border:  0rpx white solid;
+  background: #36abd0;
+  margin-top: 50rpx;
+  font-size: 25rpx;
+  line-height: 43rpx;
+  text-align: center;
+} 
+.my_jinj {
+  background: #22a188;
+}
+/* 尾部 */
+/* .weibu {
+  position:fixed;
+  bottom:0;
+  width: 750rpx;
+  height: 150rpx;
+  background: #f2f2f2;
+}
+.weibu_css {
+  display: inline-block;
+  margin-left: 16%;
+  margin-top: 30rpx;
+}
+.weixz {
+  width: 50rpx;
+  height: 45rpx;
+  margin-left: 5%;
+}
+.hous_page {
+  display: inline-block;
+  font-size: 25rpx;
+  color: #989898;
+  margin-left: 5%;
+} */

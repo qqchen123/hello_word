@@ -1,0 +1,37 @@
+<!-- 退出页面 -->
+<view class='signOutpage'>
+    <!--未登录状态  -->
+    <view class='not_login' style='display:{{bind?"none":""}}'>
+          您还未登录 , 请点击 <label class='login' bindtap='login'>登录</label> 
+     </view>
+     <!-- 内容部分 -->
+     <view>
+        <view class='input_address'>
+          <view class='view_css'>
+               业务员：<label>{{username}}</label>
+          </view>
+        </view>
+        <view class='input_address'>
+              部 门 ：<label>{{department}}</label>
+        </view>
+     </view>
+     <!-- 设置栏 -->
+     <view class='my_seze'>
+        <view class='my_notice'>
+            <label class='my_notice_font'>我的通知</label>
+        </view>
+        <view class='my_notice'>
+             <label class='my_notice_font'>修改密码</label>
+        </view>
+        <view class='my_notice'>
+             <label class='my_notice_font'>意见反馈</label>
+        </view>
+        <view class='my_notice'>
+             <label class='my_notice_font'>关于我们</label>
+        </view>
+     </view>
+     <!-- 按钮 -->
+     <view style='display:{{}}'>
+         <button class='assess_button' bindtap='out' style='display:{{bind?"":"none"}}'>退 出</button>
+     </view>
+</view>

@@ -1,0 +1,89 @@
+page{  
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+    background-color:#F9F9F9;
+  } 
+  /* 导航条 */
+.navbar{ 
+    flex: none; 
+    display: flex; 
+    width: 750rpx;
+    height: 80rpx;
+    border: 0rpx red solid;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+    box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+    font-size: 30rpx;
+ } 
+.navbar .item{
+    position: relative; 
+    flex: auto; 
+    text-align: center; 
+    line-height: 80rpx; 
+ }
+.navbar .item.active:after{ 
+    content: ""; 
+    display: block;
+    position: absolute; 
+    bottom: 0;  
+    left: 0; 
+    right: 0; 
+    height: 4rpx; 
+    background: #11DF22;
+ } 
+ .my_seze {
+    width: 750rpx;
+    height:350rpx;
+    margin-top: 5%;
+    background: white;
+}
+.my_notice_zhu {
+    width: 700rpx;
+    height: 70rpx;
+    font-size: 30rpx;
+    border: 3rpx solid #F0F0F0;
+    border-right: 0rpx;
+    border-left: 0rpx;
+    border-top: 0rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+}
+.my_notice {
+    width: 700rpx;
+    height: 70rpx;
+    font-size: 30rpx;
+    border: 3rpx solid #F0F0F0;
+    border-right: 0rpx;
+    border-left: 0rpx;
+    margin-left: 20rpx;
+}
+.my_nontice_zhu_font {
+  position: absolute;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  font-size: 28rpx;
+}
+.order_details {
+  position: absolute;
+  margin-left: 600rpx;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #B5B5B5;
+}
+.my_notice_font {
+  display: block;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  font-size: 28rpx;
+}
+/* 已评估模块 */
+.jx_order {
+   width: 170rpx;
+   height: 50rpx;
+   line-height: 50rpx;
+   font-size: 23rpx;
+   background: #01A3D4;
+   color: white;
+   margin-left: 67%;
+} 

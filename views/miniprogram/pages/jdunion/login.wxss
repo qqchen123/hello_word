@@ -1,0 +1,29 @@
+.view_login {
+  margin-top: 10%;
+}
+.logo_css {
+  width: 300rpx;
+  height: 300rpx;
+  margin-left: 30%;
+}
+.input_address {
+  display: inline-block;
+  font-size: 30rpx;
+  border: 5rpx solid #CCCCCC;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-left: 0rpx;
+  margin-left: 20rpx;
+  width: 60%;
+  margin-top: 10%;
+  text-align: center;
+}
+.account_num {
+  margin-left: 10%;
+}
+.login {
+  margin-top: 25%;
+  background: #169BD5;
+  color: white;
+  width: 60%;
+}

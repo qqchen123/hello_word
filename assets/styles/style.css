@@ -1,0 +1,83 @@
+/****************************
+*描述:jquery自适应焦点图轮播css
+*作者：方林
+*版本:v1.0.0(2014.10.27)
+*备注：所有的图片请务必保持统一尺寸
+*****************************/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,p,th,td{margin:0;padding:0;}
+body{min-width:320px;background-color:#ffffff;}
+a,img{border:0;}
+a{text-decoration:none;color:#565656;}
+.c{clear:both;height:0;}
+
+/* logo */
+.logo{width:100%;padding-bottom:20%;position:relative;}
+.logo1{ position:absolute; z-index:999; left:36%;top:-70%;display:block;}
+
+/* 中间导航 */
+.menu{width:100%;padding-bottom:52%;position:relative;}
+.menu a{ position:absolute;display:block;}
+.menu .l1{width:54%;left:0;top:0;}
+.menu .l2{width:54%;left:0;top:33.5%;}
+.menu .l3{width:54%;left:0;top:67%;}
+
+.menu .r1{width:53%;right:0;top:0;}
+.menu .r2{width:53%;right:0;top:33.5%;}
+.menu .r3{width:53%;right:0;top:67%;}
+
+
+/* 焦点图 */
+.index_banner{position:relative;width:100%;padding-bottom:54%;}
+.index_banner ul{overflow:hidden;}
+.index_banner li{position:absolute;top:0;left:0;overflow:hidden;width:100%;}
+.index_banner li a{display:block;margin:0 auto;}
+
+
+/* 列表 */
+.list{width:100%;}
+.list ul li{display:block;width:90%;margin:0 5%;border-bottom:1px solid #c6c6c6;list-style:none;overflow:hidden;}
+.list ul li a{line-height:3em;height:3em;font-size:0.8em;display:block; overflow:hidden;width:90%;padding-right:10%;background:url(../img/arr1.png) right center no-repeat;background-size:2% 20%;}
+.list ul li a span{color:#7d0000;margin-right:0.8em;}
+
+.list2{width:100%;padding-bottom:8em;background:#eeeeee;}
+.list2 ul li{padding:1em 1.5em; list-style:none;border-top:2px solid #ffffff; background:#eeeeee;font-size:1em;}
+.list2 ul li p{font-size:1em;}
+.list2 ul li a{font-size:1em;color:#7d0000;}
+
+.more{width:15%;display:block;margin:2em auto;}
+.more img{margin:0 auto;display:block;}
+
+.web_bottom{position:fixed;left:0;bottom:0px;width:720px; text-align:center; background:#e6e6e6;border-top:4px solid #a0a0a0;padding:30px 0; z-index:999}
+.bottom_cont{width:720px;height:100px;}
+.web_bottom p{text-align:center;line-height:30px;color:#565656;font-size:20px;}
+/* 标题部分 */
+.t1{color:#565656;font-size:1em; background:#eeeeee;padding:1.5em 1em 0 1.5em;line-height:3em;}
+
+/* 用户信息头像 */
+.user_info{width:100%; text-align:center;padding:1em 0;line-height:1em;color:#565656;}
+.user_info p{font-size:1em;color:#565656;}
+
+/* 详情 */
+.cont_xq{padding:3%;}
+.cont_xq .xq_t{font-size:1.2em; text-align:center;line-height:40px;padding:0.8em 0;}
+.cont_xq img{padding:30px 0;}
+.xq_time{color:#7d0000; font-size:1.0em; text-align:center }
+.cont_jz{width:720px;min-height:100%; background:url(../pic/list_xyjz/p2.jpg) center bottom no-repeat;}
+.join{width:15%;display:block;margin:0 auto;}
+.t2{display:block;margin:10px 0;}
+
+
+
+
+
+/* 首页底部 */
+.index_bottom{width:90%;padding:5% 5% 15.5% 5%;height:0; position:relative;}
+.index_bottom p{text-align:center;font-size:0.7em;width:80%;color:#565656;padding-top:3%;}
+.index_bottom p.yw{text-align:center;font-size:0.4em;width:80%;color:#565656;padding-top:0;}
+.index_bottom a{display:block;width:15.5%; position:absolute;right:2%;top:15%;z-index:999;}
+
+/* 通用底部 */
+.web_bottom{position:fixed;left:0;bottom:0px;width:100%; text-align:center; background:#e6e6e6;border-top:4px solid #a0a0a0;padding:2em 0; z-index:999;font-size:0.5em;line-height:0.8em;}
+.web_bottom p{text-align:center;line-height:2em;color:#565656;font-size:1.5em;margin:0;}
+.bottom_cont{width:100%;height:3em;}

@@ -1,0 +1,79 @@
+<!-- 首页-->
+<view class='bgcolor'>
+    <!--轮播-->
+    <view class='view_lunb'>
+         <swiper indicator-dots="{{dotsBoll}}" interval="{{interval}}" duration="{{duration}}" autoplay="{{autoplay}}" bindchange="bindchange" style='height:400rpx; width:750rpx;'>
+           <block wx:for-items="{{imageUrls}}" class="image_blcok">
+              <swiper-item  >
+                  <image src="{{item}}" bindtap="swipclick" class='image_css'></image>
+              </swiper-item>
+            </block>
+         </swiper>
+    </view>
+    <!-- 字体轮播-->
+    <!--<view class='font_boll'>
+       <image src='/img/喇叭.png' class='laba'/> 
+        <text class='font_xibao'>
+          恭喜张三进件成功
+        </text> 
+    </view>
+    -->
+    <!--接口的接入-->
+    <!-- <navigator url='/pages/jdunion/systemassess'  hover-class='none'>
+      <view class='assess'>
+          <image src='{{allImgs}}黄条.png' class='huantiao'></image>
+          <label class='success_css'>已有88人成功进件</label>
+          <label class='myassess'>我要评估</label>
+          <label class='suhomecss'>快速得出房产价格</label>
+      </view>
+   </navigator>
+    <navigator url='/pages/jdunion/customsform' hover-class='none'>
+        <view class='assess'>
+            <image src='{{allImgs}}黄条.png' class='huantiao'></image>
+            <label class='success_css'>已有88人成功进件</label>
+            <label class='myassess'>报单入口</label>
+            <label class='suhomecss'>直接填写资料进行报单</label>
+        </view>
+    </navigator> -->
+    <!-- 评估报单入口 -->
+    <view class='declaration_form_c'>
+         <!--我要评估  -->
+         <!-- <navigator url='/pages/jdunion/systemassess'  hover-class='none'> -->
+          <view class='gree_border' bindtap='pinggu'>
+              <image src='/img/jinjian.png' class='image_big'></image>
+                <view class='my_assess'>
+                  我要评估
+                </view>
+          </view>
+         <!-- </navigator> -->
+         <!-- 我要报单 -->
+          <!-- <navigator url='/pages/jdunion/customsform' hover-class='none'> -->
+            <view class='gree_border black_border' bindtap='baodan'>
+                  <image src='/img/baodan.png' class='image_big'></image>
+                  <view class='my_assess my_jinj'>
+                  我要报单
+                  </view>
+            </view>
+          <!-- </navigator> -->
+    </view>
+      
+    <!-- 尾部-->
+    <!-- <view class='weibu'>
+       <view class='weibu_css'>
+          <image  src ='{{allImgs}}首页选中.png' class='weixz'></image>
+          <text class='hous_page'>首页</text>
+        </view>
+         <view class='weibu_css'>
+           <navigator url='/pages/jdunion/bookingOrder' redirect="true" hover-class='none'>
+               <image src='{{allImgs}}订单未选中.png' class='weixz'></image>
+                <text class='hous_page'>订单</text>
+            </navigator>
+       </view>
+        <view class='weibu_css'>
+          <navigator url='/pages/jdunion/sign_out/signOutpage' redirect="true" hover-class='none'>
+             <image src='{{allImgs}}人未选中.png' class='weixz'></image>
+             <text class='hous_page'>我的</text>
+          </navigator>
+        </view>
+    </view> -->
+</view>

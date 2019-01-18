@@ -1,0 +1,113 @@
+<!-- 订单页面 -->
+<!--导航条-->
+<view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}} </text>
+</view>
+<!-- 全部 -->
+<view hidden="{{currentTab!==0}}">
+    <view wx:if="{{allorderlist}}">
+        <view wx:for="{{allorderlist}}">
+            <view class='my_seze'>
+                <view class='my_notice_zhu'>
+                    <label class='my_nontice_zhu_font'>订单编号：{{item.order_num ? item.order_num : '暂无数据'}}</label>
+                    <!-- <label class='order_details'>详情 ></label> -->
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>可贷金额：{{item.ZheKouZongJia ? item.ZheKouZongJia+'万' : '暂无数据'}}</label>
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>房产地址：{{item.full_house_name!='undefined' ? item.full_house_name : '暂无数据'}}</label>
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>评估日期：{{item.c_date ? item.c_date : '暂无数据'}}</label>
+                </view>
+                <view wx:if='{{item.status==1}}'>
+                    <button class='jx_order'>已报单</button>
+                </view>
+                <view wx:else>
+                    <!-- <navigator url='/pages/jdunion/customsform?oid={{item.id}}'> -->
+                    <button bindtap='oclick' id='{{item.id}}' class='jx_order'>继续报单</button>
+                    <!-- </navigator> -->
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        暂无数据
+    </view>
+</view>
+<!--已评估  -->
+<view hidden="{{currentTab!==1}}">
+    <view wx:if="{{ypgorderlist}}">
+        <view wx:for="{{ypgorderlist}}">
+            <view class='my_seze'>
+                <view class='my_notice_zhu'>
+                    <label class='my_nontice_zhu_font'>订单编号：{{item.order_num}}</label>
+                    <!-- <label class='order_details'>详情 ></label> -->
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>可贷金额：{{item.ZheKouZongJia}}万</label>
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>房产地址：上海市{{item.full_house_name}}</label>
+                </view>
+                <view class='my_notice'>
+                    <label class='my_notice_font'>评估日期：{{item.c_date}}</label>
+                </view>
+                <!-- <navigator url='/pages/jdunion/customsform?oid={{item.id}}'> -->
+                <button bindtap='oclick' id='{{item.id}}' class='jx_order'>继续报单</button>
+                <!-- </navigator> -->
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        暂无数据
+    </view>
+</view>
+<!-- 贷款中 -->
+<view hidden="{{currentTab!==2}}">
+    <view wx:if="{{ypgorderlist}}">
+        <view wx:for="{{ybdorderlist}}">
+            <navigator url='./order_details?id={{item.id}}'>
+                <view class='my_seze'>
+                    <view class='my_notice_zhu'>
+                        <label class='my_nontice_zhu_font'>主贷人：{{item.user_name ? item.user_name : '暂无数据'}}</label>
+                    </view>
+                    <view class='my_notice'>
+                        <label class='my_notice_font'>状态：初评失败</label>
+                    </view>
+                    <view class='my_notice'>
+                        <label class='my_notice_font'>产品属性：{{item.product_type ? item.product_type : '暂无数据'}}</label>
+                    </view>
+                    <view class='my_notice'>
+                        <label class='my_notice_font'>订单编号：{{item.order_num ? item.order_num : '暂无数据'}}</label>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+    <view wx:else>
+        暂无数据
+    </view>
+    <!-- <view wx:for="{{ybdorderlist}}">
+        <view class='my_seze'>
+            <view class='my_notice_zhu'>
+                <label class='my_nontice_zhu_font'>订单编号：{{item.order_num}}</label>
+            </view>
+            <view class='my_notice'>
+                <label class='my_notice_font'>可贷金额：{{item.ZheKouZongJia}}万</label>
+            </view>
+            <view class='my_notice'>
+                <label class='my_notice_font'>房产地址：上海市{{item.full_house_name}}</label>
+            </view>
+            <view class='my_notice'>
+                <label class='my_notice_font'>评估日期：{{item.c_date}}</label>
+            </view>
+            Ï<button class='jx_order'>继续报单</button>
+        </view>
+    </view> -->
+</view>
+<!--还款中  -->
+<view hidden="{{currentTab!==3}}"></view>
+<!-- 已结清 -->
+<view hidden="{{currentTab!==4}}"> </view>

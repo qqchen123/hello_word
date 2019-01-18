@@ -1,0 +1,27 @@
+
+2019-01-02 10:07:01 SESSION.wx缺失
+array (
+  'login_time' => '2018-12-27 11:25:44',
+  'jar_15618988191' => 'O:27:"GuzzleHttp\\Cookie\\CookieJar":2:{s:36:"' . "\0" . 'GuzzleHttp\\Cookie\\CookieJar' . "\0" . 'cookies";a:3:{i:0;O:27:"GuzzleHttp\\Cookie\\SetCookie":1:{s:33:"' . "\0" . 'GuzzleHttp\\Cookie\\SetCookie' . "\0" . 'data";a:9:{s:4:"Name";s:10:"jrbqiantai";s:5:"Value";s:32:"28F995A095F820B1067608B2C041FBD4";s:6:"Domain";s:15:"www.fungugu.com";s:4:"Path";s:1:"/";s:7:"Max-Age";N;s:7:"Expires";N;s:6:"Secure";b:0;s:7:"Discard";b:0;s:8:"HttpOnly";b:1;}}i:1;O:27:"GuzzleHttp\\Cookie\\SetCookie":1:{s:33:"' . "\0" . 'GuzzleHttp\\Cookie\\SetCookie' . "\0" . 'data";a:9:{s:4:"Name";s:13:"login_Account";s:5:"Value";s:2:"""";s:6:"Domain";s:15:"www.fungugu.com";s:4:"Path";s:1:"/";s:7:"Max-Age";N;s:7:"Expires";i:10;s:6:"Secure";b:0;s:7:"Discard";b:0;s:8:"HttpOnly";b:0;}}i:2;O:27:"GuzzleHttp\\Cookie\\SetCookie":1:{s:33:"' . "\0" . 'GuzzleHttp\\Cookie\\SetCookie' . "\0" . 'data";a:9:{s:4:"Name";s:10:"rememberme";s:5:"Value";s:1:"0";s:6:"Domain";s:15:"www.fungugu.com";s:4:"Path";s:1:"/";s:7:"Max-Age";N;s:7:"Expires";i:10;s:6:"Secure";b:0;s:7:"Discard";b:0;s:8:"HttpOnly";b:0;}}}s:39:"' . "\0" . 'GuzzleHttp\\Cookie\\CookieJar' . "\0" . 'strictMode";b:0;}',
+  'fms_id' => '1',
+  'fms_userid' => 'M000001',
+  'fms_username' => '测试管理员',
+  'fms_dzt' => '01',
+  'fms_usermm' => '1dc03d0ef99eb5fd651667a0b3eb2b0e',
+  'fms_salt' => '35c240',
+  'fms_dip' => '1.1.1.1',
+  'fms_userrole' => '1',
+  'fms_wesing' => '1',
+  'fms_idno' => NULL,
+  'fms_mobile' => NULL,
+  'fms_email' => NULL,
+  'fms_rzdate' => NULL,
+  'fms_cdate' => '2017-05-04 12:27:27',
+  'fms_udate' => '2018-12-26 16:55:31',
+  'fms_departmentid' => NULL,
+  'fms_role_name' => '系统管理员',
+  'fms_less_role_id' => NULL,
+  'fms_less_role_name' => NULL,
+  'fms_department_name' => NULL,
+  'fms_uname' => '测试管理员',
+)

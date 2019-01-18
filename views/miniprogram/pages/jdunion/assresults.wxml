@@ -1,0 +1,16 @@
+<!-- 选择按钮-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='bgcolor'>
+        <view class='search'>
+            <input type='text' class='input_search' auto-focus='true' bindinput="houseKey" />
+            <text class='sous_font' bindtap="searchtap">搜索</text>
+        </view>
+        <view wx:for="{{selects}}" wx:for-item="i">
+            <view  bindtap='back' data-houseName="{{i.residentialName}}" data-houseId="{{i.xiaoquID}}" data-full_house_name="{{i.districtName}}{{i.similarName}}{{i.residentialName}}" class='select_housInfo'>
+                <image src='{{allImgs}}sousuoimg.png' class='sousuo_imgage'></image>
+                <!-- <label class='hous_font'> {{i.districtName}}-{{i.similarName}}-{{i.residentialName}} </label> -->
+                <label class='hous_font'> {{i.districtName}}-{{i.similarName}}-{{i.residentialName}}</label>
+            </view>
+        </view>
+    </view>
+</form>

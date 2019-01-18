@@ -1,0 +1,179 @@
+.bgcolor {
+  width: 750rpx;
+  height:100%;
+  /* background: #F9F9F9; */
+}
+.real_information {
+  width: 93%;
+  border: 0rpx solid gray;
+  margin-top: 5%;
+	display: inline-block;
+  border-radius: 15rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+  margin-left: 30rpx;
+}
+.hone_filin {
+   display: block;
+   font-weight: bold;
+   margin-left: 30%;
+   margin-top: 20rpx;
+}
+.home_address {
+  display: inline-block;
+  font-size: 30rpx;
+  margin-top: 50rpx;
+  margin-left: 20rpx;
+}
+.sousuo_image {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 28rpx;
+  margin-left: -60rpx;
+}
+.xiala_sousuo {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  left: 630rpx;
+  margin-top: -15rpx;
+}
+.sousuo {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 40rpx;
+  margin-left: -60rpx;
+}
+/*下拉  */
+.lable_chocse {
+  display: inline-block;
+  width: 80rpx;
+  height: 40rpx;
+  border: 0rpx red solid;
+}
+.xiala_right {
+  position: absolute;
+  display: inline-block;
+  width: 300rpx;
+  border: 0rpx #169BD5 solid;
+  /* margin-left: 70rpx; */
+}
+.lbale_xlala_right {
+   display: inline-block;
+   margin-left: 340rpx;
+   margin-top: -10rpx;
+}
+.lable_xlala_left {
+   display: inline-block;
+   margin-top: -10rpx;
+   margin-left: 10rpx;
+}
+/* 字体 */
+.lable_data {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  position: absolute;
+  margin-left: -60rpx;
+}
+.lable_css {
+  position: relative;
+ font-size: 30rpx;
+ margin-top: -1rpx;
+ margin-left: 10rpx;
+}
+.input_address {
+  display: inline-block;
+  font-size: 25rpx;
+  border: 1rpx solid #CCCCCC;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-left: 0rpx;
+  margin-left: 20rpx;
+  width: 70%;
+}
+.font_color {
+  color: #169CD2;
+}
+.input_diya {
+  display: inline-block;
+  width: 180rpx;
+}
+.diya_css {
+  display: inline-block;
+}
+.font_size {
+  display: inline-block;
+  font-size: 30rpx;
+}
+.input_size {
+  display: inline-block;
+  font-size: 25rpx;
+  border: 1rpx solid #CCCCCC;
+  border-top: 0rpx;
+  border-right: 0rpx;
+  border-left: 0rpx;
+  width: 130rpx;
+}
+.sousuo_left {
+  display: inline-block;
+  width: 40rpx;
+  height: 35rpx;
+  position: absolute;
+  margin-left: 50rpx;
+}
+.jiah_css {
+  margin-top: 5%;
+  width: 200rpx;
+  height: 180rpx;
+  background: #f9f9f9;
+  margin-left: 10%;
+  border: 0rpx red solid;
+}
+.jiah_tup {
+  width: 53rpx;
+  height: 53rpx;
+  margin-top: 12%;
+  margin-left: 38%;
+}
+.click_tup {
+  display: block;
+  font-size: 20rpx;
+  color: #cccccc;
+  margin-left: 20%;
+  margin-top: 10rpx;
+}
+.click_delete {
+  margin-left:10%;
+}
+.imgs_css {
+  display: inline-block;
+  width: 200rpx;
+  height:160rpx; 
+}
+.assess_button {
+  width: 40%;
+  background: #169BD5;
+  color: white;
+  margin-top: 10%;
+}
+.slt_tup {
+  width: 100%;
+  border: 0rpx solid gray;
+  /* height: 100rpx; */
+  margin-top: 3%;
+	display: inline-block;
+  border-radius: 15rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+}
+.hous_image_css {
+  margin-left: 50rpx;
+}
+.icons_css {
+  position: absolute;
+  margin-left: -40rpx;
+}

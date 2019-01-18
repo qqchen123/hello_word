@@ -1,0 +1,58 @@
+/* pages/jdunion/customsdeform.wxss */
+.resut_view_info {
+  margin-top: 30rpx;
+}
+.reust_css {
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.reust {
+  margin-left: 15%;
+}
+.font_class {
+  margin-top: 5%;
+}
+.font_css {
+   margin-left: 20rpx;
+   font-size: 50rpx;
+   font-weight: bold;
+}
+.real_information {
+  width: 94%;
+  height: 230rpx;
+  border: 1rpx solid gray;
+  margin-top: 4%;
+  margin-left: 20rpx;
+	display: inline-block;
+  border-radius: 15rpx;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.30);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.27);
+  margin-right: 26px;
+}
+.font_css3 {
+  margin-top: 20rpx;
+}
+.hous_fontcss {
+  display: block;
+  font-size: 30rpx;
+  margin-left: 30rpx;
+}
+.font_css2 {
+   display: block;
+   margin-left: 20rpx;
+   font-size: 36rpx;
+   font-weight: bold;
+   margin-top: 15rpx;
+   color: #333333;
+}
+.make_entry {
+  position: absolute;
+  width: 25%;
+  height: 60rpx;
+  font-size: 25rpx;
+  background: #01A3D4;
+  color: white;
+  margin-left: 60%;
+  margin-top: -35rpx;
+}

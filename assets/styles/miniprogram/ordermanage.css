@@ -1,0 +1,390 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.clear {
+	clear: both;
+}
+
+.remark-span-title {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+}
+.search-input {
+	display: inline-block;
+	width: 260px;
+	height: 40px;
+	line-height: 30px;
+}
+
+.type-btn {
+	width: 80px;
+	height: 30px;
+	float: left;
+	background-color: #E3EEF5;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #E3E3E3;
+	border-width: 0 0 0 1px;
+}
+.type-btn:hover {
+	cursor: pointer;
+}
+.type-btn-box {
+	margin: 10px 0;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 3px;
+	border: 1px solid #E3E3E3;
+}
+.type-btn-on-select {
+	background-color: #6991C7;
+	color: #FFF;
+}
+
+.divthr {
+	width: 98%;
+	line-height: 40px;
+	border:1px solid #FFF;
+}
+.divtr {
+	width: 98%;
+	line-height: 40px;
+	border:1px solid #FFF;
+	float: left;
+}
+.page-btn {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px #ccc solid;
+	border-radius: 2px;
+	background-color: #FFF;
+	color: #000;
+	float: left;
+}
+.pagesize-choose {
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	margin:2px;
+}
+.jump-input {
+	width: 50px;
+	line-height: 30px;
+	height: 30px;
+	margin:2px;
+	border-radius: 2px;
+}
+.divth {
+	width: 140px;
+	height: 40px;
+	background-color: #E3EEF5;
+	float: left;
+	border:1px solid #CCC;
+	text-align: center;
+	line-height: 40px;
+	color: #000;
+	font-weight: 600;
+}
+.divtd {
+	width: 140px;
+	height: 40px;
+	float: left;
+	border:1px solid #CCC;
+	padding: 5px;
+}
+.applytime {
+	width: 180px;
+}
+.amount {
+	text-align: right;
+}
+.page-box {
+	float: left;
+}
+.pagesize-box {
+	float: left;
+}
+.jump-box {
+	float: left;
+	margin-left: 5px;
+}
+.page-btn:hover {
+	cursor: pointer;
+}
+.pagesize-choose:hover {
+	cursor: pointer;
+}
+.new-btn:hover {
+	cursor: pointer;
+}
+.lastdeal-btn:hover {
+	cursor: pointer;
+}
+.page-btn-onselect {
+	background-color: #108EE9;
+	color: #FFF;
+}
+.pic-select-left {
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid #CCC;
+	text-align: center;
+	margin-top: 50px;
+	float: left;
+	margin-right: 10px;
+}
+.pic-select-right {
+	display: block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid #CCC;
+	text-align: center;
+	margin-top: 50px;
+	float: left;
+	margin-left: 10px;
+}
+.pic-select-left:hover {
+	cursor: pointer;
+}
+.pic-select-right:hover {
+	cursor: pointer;
+}
+.imgonselect {
+	border: 1px blue solid;
+}
+.imgselectboxhidden {
+	display: none;
+}
+.imgselectbox {
+	width: 100px;
+	height: 100px;
+}
+.dn {
+	display: none;
+}
+.viewbtn {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	/*border:1px solid #CCC;*/
+	text-align: center;
+	margin-right: 5px;
+	color: #0000FF;
+}
+.viewbtn:hover {
+	cursor: pointer;
+}
+.editbtn {
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	/*border:1px solid #CCC;*/
+	text-align: center;
+	color: #0000FF;
+}
+.editbtn:hover {
+	cursor: pointer;
+}
+.view-span-title {
+	display: inline-block;
+	width: 160px;
+	text-align: right;
+	margin-right: 10px;
+}
+.view-type-title {
+	border:1px solid black;
+	border-radius: 3px;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+.baodan-span {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-140-span {
+	display: inline-block;
+	width: 140px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-180-span {
+	display: inline-block;
+	width: 180px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-200-span {
+	display: inline-block;
+	width: 200px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-240-span {
+	display: inline-block;
+	width: 240px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-260-span {
+	display: inline-block;
+	width: 260px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.baodan-280-span {
+	display: inline-block;
+	width: 280px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.idnumberform {
+	padding: 5px;
+}
+.idnumberform-title {
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	margin-right: 5px;
+}
+.houseform-title {
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#search-btn {
+	display: block;
+	border:1px solid #CCC;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	float: left;
+	border-width: 1px 1px 1px 0;
+}
+#condition-input {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	border-width: 1px 0 1px 1px;
+}
+#search-btn:hover {
+	cursor: pointer;
+}
+#part1-id {
+	display: inline-block;
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+}
+#part1-department {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+#part1-sales {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+#idnumberinput {
+	display: inline-block;
+	width: 40px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin:0 5px;
+	border:1px solid #CCC;
+}
+#idnumberinput:hover {
+	cursor: pointer;
+}
+#forminput-name {
+	margin-bottom: 5px;
+}
+#forminput-idnumber {
+	margin-bottom: 5px;
+}
+#baodanform-save {
+	border:1px solid #CCC;
+	background-color: #F2F2F2;
+	width: 96px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+#baodanform-save:hover {
+	cursor: pointer;
+	background-color: #DEDEDE;
+}
+#baodanform-cancel {
+	border:1px solid #CCC;
+	width: 56px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#baodanform-cancel:hover {
+	cursor: pointer;
+}
+.input-text {
+	border: none !important; 
+	border-bottom: 2px solid #CCC !important;
+	outline: none !important;
+}
+
+.press-button:hover {
+	cursor: pointer;
+	background-color: #DEDEDE;
+}
+.press-button {
+	display: inline-block;
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid #CCC;
+	text-align: center;
+	background-color: #F2F2F2;
+}
+.obligeelist {
+	margin-bottom: 5px;
+}
+#baodanform label {
+	display: inline-block;
+	width: 100px;
+}
+#applyform label {
+	display: inline-block;
+	width: 100px;
+}
+#sysassessinfo label {
+	display: inline-block;
+	width: 100px;
+}

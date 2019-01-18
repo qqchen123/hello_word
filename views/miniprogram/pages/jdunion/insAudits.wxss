@@ -1,0 +1,41 @@
+/* pages/jdunion/insAudits.wxss */
+.bgcolor {
+  width: 750rpx;
+  height:1334rpx;
+  /* background: #F9F9F9; */
+}
+.shenhe {
+  padding-top: 15%;
+}
+.order_show {
+  position: relative;
+  width: 85%; 
+  height: 430rpx;
+  border: 2rpx solid gray;
+  margin-top: 12%;
+	display: inline-block;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  border-radius: 15rpx;
+  margin-left: 60rpx;
+}
+.shenhe_font {
+  display: block;
+  font-size: 30rpx;
+  font-weight: 15rpx;
+  margin-left: 10%;
+  margin-top: 10rpx;
+}
+.ins_dudits {
+  margin-left: 23%;
+  font-size: 45rpx;
+  display: block;
+  margin-top: 15%;
+}
+.query_button {
+  margin-top: 30%;
+  width: 60%;
+  background: #169BD5;
+  color: white;
+}

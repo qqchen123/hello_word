@@ -1,0 +1,16 @@
+<!-- 未登录状态 -->
+<view class='signOutpage'>
+     <view class='not_login'>
+          您还未登录 , 请点击 <label class='login'>登录</label> 
+     </view>
+     <!-- 设置栏 -->
+     <view class='my_seze'>
+        <view class='my_notice'>
+             <label class='my_notice_font'>意见反馈</label>
+        </view>
+        <view class='my_notice'>
+             <label class='my_notice_font'>关于我们</label>
+        </view>
+     </view>
+     
+</view>

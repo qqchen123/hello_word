@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/jdunion/homepage",
+    "pages/jdunion/order/all_order_page",
+    "pages/jdunion/order/order_details",
+    "pages/jdunion/systemassess",
+    "pages/jdunion/housinformation",
+    "pages/jdunion/sign_out/signOutpage",
+    "pages/jdunion/sign_out/notLoginS",
+    "pages/jdunion/bookingOrder",
+    "pages/jdunion/insAudits",
+    "pages/jdunion/assresults",
+    "pages/jdunion/login/login",
+    "pages/jdunion/customsform",
+    "pages/jdunion/text",
+    "pages/jdunion/creadID",
+    "pages/jdunion/customsdeform",
+    "pages/jdunion/pendingEntry",
+    "pages/jdunion/login",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#ccc",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#f9f9f9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/jdunion/homepage",
+        "iconPath": "img/首页未选中.png",
+        "selectedIconPath": "img/首页选中.png"
+      },
+      {
+        "text": "订单",
+        "pagePath": "pages/jdunion/order/all_order_page",
+        "iconPath": "img/订单未选中.png",
+        "selectedIconPath": "img/订单选中.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/jdunion/sign_out/signOutpage",
+        "iconPath": "img/人未选中.png",
+        "selectedIconPath": "img/人选中.png"
+      }
+    ]
+  }
+}

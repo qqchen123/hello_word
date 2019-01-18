@@ -1,0 +1,97 @@
+<!--系统评估-->
+<view class='bgcolor'>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class='real_information'>
+            <text class='hone_filin'>房产信息填写</text>
+            <navigator url='/pages/jdunion/assresults'>
+                <view class='address'>
+                    <text class='home_address'>房屋坐落：</text>
+                    <input type='text' placeholder="请输入小区名称/地址" class='input_address' bindinput='bindHouseName' disabled="true" 
+                           value="{{houseName}}"/>
+                    <image src='{{allImgs}}sousuoimg.png' class='sousuo_image'></image>
+                </view>
+            </navigator>
+            <view class='address'>
+                <text class='home_address'>建筑面积：</text>
+                <input type='text' placeholder="请输入建筑面积" class='input_address' type='digit' name='house_area'/>
+                <label class='sousuo lable_data'>m²</label>
+            </view>
+            <view class='address'>
+                <text class='home_address'>房屋朝向：</text>
+                <picker bindchange="towardChange" value="{{towardArray[towardIndex]}}" range="{{towardArray}}"
+                        mode="selector" class='input_address font_color' name="toward">
+                  <label class='lable_chocse'>{{towardArray[towardIndex]}}</label>
+                  <view class='xiala_right'>
+                    <label class='lbale_xlala_right iconfont icon-select'></label>
+                  </view>
+                </picker>
+            </view>
+            <view class='address'>
+                <text class='home_address'>所在楼层：</text>
+                <input type='text' placeholder="请输入所在楼层" bindblur="floor_bind" class='input_address' type='digit' name='floor'/>
+                <label class='sousuo lable_data'>层</label>
+            </view>
+            <view class='address'>
+                <text class='home_address'>楼层总数：</text>
+                <input type='text' placeholder="请输入总楼层" bindblur="totalfloor_bind" class='input_address' type='digit' name='totalfloor'/>
+                <label class='sousuo lable_data'>层</label>
+            </view>
+            <view class='address'>
+                <text class='home_address'>竣工日期：</text>
+                <picker 
+                bindchange="bindPickerChanges" 
+                class="input_address font_color" 
+                name='finish_date'
+                value="{{array[index]}}" 
+                range="{{array}}">
+                    <view wx:if="{{array[index]}}">
+                        {{array[index]}}
+                    </view>
+                    <view wx:else>
+                        请选择
+                    </view>
+                </picker>
+                <label class='sousuo lable_data'>年</label>
+            </view>
+            
+            <view class='address'>
+                <text class='home_address'>规划用途：</text>
+                <picker bindchange="bindPickerChange" value="{{objectArray[ghIndex]}}" range="{{objectArray}}"
+                        mode="selector" class='input_address font_color' name="gui_hua_yong_tu">
+                  <label class='lable_chocse'>{{objectArray[ghIndex]}}</label>
+                  <view class='xiala_right'>
+                    <label class='lbale_xlala_right iconfont icon-select'></label>
+                  </view>
+                </picker>
+            </view>
+            <text class='home_address'>房本证照片（选填）：</text>
+            <view class='address'>
+                <view class='jiah_css' bindtap="chooseimage">
+                    <image src="{{allImgs}}加.png" class='jiah_tup'></image>
+                    <text class='click_tup'>点击添加图片</text>
+                    <text class='click_tup click_delete'>（长按图片删除）</text>
+                </view>
+                <view class='slt_tup'>
+                  <view class='hous_image_css'>
+                    <block wx:for="{{pics}}" wx:for-item="image" data-index="{{index}}">
+                        <image class='imgs_css' mode="aspecFill" src="{{image}}" data-src="{{image}}" data-index="{{index}}"
+                              bindtap="previewImage" bindlongpress="longPress"></image>
+                    </block>
+                  </view>
+                </view>
+            </view>
+         </view>
+        <view>
+            <button class='assess_button' form-type="submit">评 估</button>
+        </view>
+    </form>
+</view>
+
+<modal hidden="{{hidden}}" title="估价" confirm-text="报单" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"
+       no-cancel="{{nocancel}}">
+
+<view>单价：{{diYaDanJia}}元/每平米</view>
+<view>总价：{{diYaZongJia}}万元</view>
+<view>折扣：{{fangDaiZheKou}}成</view>
+<view>折扣总价：{{ZheKouZongJia}}万元</view>
+</modal>

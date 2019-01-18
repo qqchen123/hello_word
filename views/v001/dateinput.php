@@ -1,0 +1,1 @@
+<input class="{{data['input_class']}}" name="{{data['input_name']}}" id="{{data['input_id']}}" value="" style="{{data['input_style']}}"></input>

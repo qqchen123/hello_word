@@ -1,0 +1,36 @@
+<!--评估结果-->
+<view>
+    <view class='resut_view_info'>
+      <text class='reust_css'>姓名：***</text>
+      <text class='reust_css reust'>房产地址：桂林路999号 </text>
+    </view>
+    <view class='font_class'>
+      <text class='reust_css'>房产估值：</text>
+      <text class='font_css'>400万</text>
+    </view>
+    <view>
+      <text class='reust_css'>经过筛选，可贷机构及最高金额如下：</text>
+    </view>
+    <view class='real_information'>
+       <text class='font_css2'>A1机构最高可贷金额： 300万</text>
+       <view class='font_css3'>
+         <text class='hous_fontcss'>房抵贷：290万</text>
+         <text class='hous_fontcss'>加成贷：280万</text>
+         <navigator url='/pages/jdunion/bookingOrder'>
+            <button class='make_entry'>预约进件</button>
+         </navigator>
+       </view>
+    </view>
+    <view class='real_information'>
+       <text class='font_css2'>A1机构最高可贷金额： 300万</text>
+        <view class='font_css3'>
+         <text class='hous_fontcss'>房抵贷：290万</text>
+         <text class='hous_fontcss'>加成贷：280万</text>
+         <button class='make_entry'>预约进件</button>
+       </view>
+    </view>
+    <view class='real_information'>
+       <text class='font_css2'>A3机构最高可贷金额： 0万</text>
+      <text class='hous_fontcss'>二类地区25房龄无法录入</text>
+    </view>
+</view>

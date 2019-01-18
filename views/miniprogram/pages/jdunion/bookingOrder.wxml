@@ -1,0 +1,142 @@
+<!-- 预约订单-->
+<view class='booking_order_page'>
+    <!-- header头部 -->
+    <view class='order_head'>
+        <view class='has_been_assessed' bindtap='ypg'>
+            <label class='been_assessed'>已评估</label>
+        </view>
+        <view class='has_been_assessed has_been_form' bindtap='ybd'>
+            <label class='been_assessed'>已报单</label>
+        </view>
+    </view>
+    <!-- bordy体部 -->
+     <view wx:if="{{allshow}}||{{ypgshow}}||{{ybdshow}}">
+        <view wx:for="{{orderlist}}" wx:if="{{allshow}}">
+            <view class='bgcolor'>
+                <view class='assess'>
+                    <image src='{{allImgs}}黄条.png' class='huantiao'></image>
+                    <view wx:if="{{item.status == 0}}">
+                        <label class='success_css'>未报单</label>
+                    </view>
+                    <view wx:else>
+                        <label class='success_css'>已报单</label>
+                    </view>
+                    <!-- <label class='suhomecss'>ID  {{item.id}}</label> -->
+                    <view class='top_order'>
+                        <!-- <label class='suhomecss'>姓名：  </label> -->
+                        <view wx:if="{{item.user_name}}">
+                            <label class='suhomecss'>姓名： {{item.user_name}}</label>
+                        </view>
+                        <label class='suhomecss'>订单编号： {{item.order_num}}</label>
+                        <view wx:if="{{item.diYaZongJia}}">
+                            <label class='suhomecss'>总价： {{item.diYaZongJia}}万</label>
+                            <label class='suhomecss'>可贷金额： {{item.ZheKouZongJia}}万</label>
+                            <label class='suhomecss'>房产地址： {{item.houseName}}</label>
+                        </view>
+                        <label class='suhomecss'>日期： {{item.c_date}}</label>
+                    </view>
+                    <view wx:if="{{item.status == 0}}">
+                        <navigator url='/pages/jdunion/customsform?oid={{item.id}}'>
+                            <button bindtap='oclick' class='make_entry' id='{{item.id}}'>继续报单</button>
+                        </navigator>
+                    </view>
+                    <view wx:else>
+                        <navigator url=''>
+                            <button class='make_entry'>已报单</button>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:for="{{ybdorderlist}}" wx:if="{{ybdshow}}">
+            <view class='bgcolor'>
+                <view class='assess'>
+                    <image src='{{allImgs}}黄条.png' class='huantiao'></image>
+                    <view wx:if="{{item.status == 0}}">
+                        <label class='success_css'>未报单</label>
+                    </view>
+                    <view wx:else>
+                        <label class='success_css'>已报单</label>
+                    </view>
+                    <!-- <label class='suhomecss'>ID  {{item.id}}</label> -->
+                    <view class='top_order'>
+                        <label class='suhomecss'>姓名： {{item.user_name}}</label>
+                        <label class='suhomecss'>订单编号： {{item.order_num}}</label>
+                        <view wx:if="{{item.diYaZongJia}}">
+                            <label class='suhomecss'>总价： {{item.diYaZongJia}}万</label>
+                            <label class='suhomecss'>可贷金额： {{item.ZheKouZongJia}}万</label>
+                            <label class='suhomecss'>房产地址： {{item.houseName}}</label>
+                        </view>
+                        <label class='suhomecss'>日期： {{item.c_date}}</label>
+                    </view>
+                    <view wx:if="{{item.status == 0}}">
+                        <navigator url='/pages/jdunion/customsform?oid={{item.id}}'>
+                            <button bindtap='oclick' class='make_entry' id='{{item.id}}'>继续报单</button>
+                        </navigator>
+                    </view>
+                    <view wx:else>
+                        <navigator url=''>
+                            <button class='make_entry'>已报单</button>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view wx:for="{{ypgorderlist}}" wx:if="{{ypgshow}}">
+            <view class='bgcolor'>
+                <view class='assess'>
+                    <image src='{{allImgs}}黄条.png' class='huantiao'></image>
+                    <view wx:if="{{item.status == 0}}">
+                        <label class='success_css'>未报单</label>
+                    </view>
+                    <view wx:else>
+                        <label class='success_css'>已报单</label>
+                    </view>
+                    <!-- <label class='suhomecss'>姓名：  张三</label> -->
+                    <!-- <label class='suhomecss'>ID  {{item.id}}</label> -->
+
+                    <view class='top_order'>
+                        <label class='suhomecss'>订单编号： {{item.order_num}}</label>
+                        <label class='suhomecss'>总价： {{item.diYaZongJia}}万</label>
+                        <label class='suhomecss'>可贷金额： {{item.ZheKouZongJia}}万</label>
+
+                        <label class='suhomecss'>房产地址： {{item.houseName}}</label>
+                        <label class='suhomecss'>日期： {{item.c_date}}</label>
+                    </view>
+                    <view wx:if="{{item.status == 0}}">
+                        <navigator url='/pages/jdunion/customsform?oid={{item.id}}'>
+                            <button bindtap='oclick' class='make_entry' id='{{item.id}}'>继续报单</button>
+                        </navigator>
+                    </view>
+                    <view wx:else>
+                        <navigator url=''>
+                            <button class='make_entry'>已报单</button>
+                        </navigator>
+                    </view>
+                </view>
+            </view>
+        </view>
+     </view>
+     <view wx:else>
+        暂无记录
+    </view>
+    <!-- tail尾部 -->
+    <!-- <view class='weibu'>
+        <view class='weibu_css'>
+            <navigator url='/pages/jdunion/homepage' redirect="true" hover-class='none'>
+                <image src='{{allImgs}}首页未选中.png' class='weixz'></image>
+                <text class='hous_page'>首页</text>
+            </navigator>
+        </view>
+        <view class='weibu_css'>
+            <image src='{{allImgs}}订单选中.png' class='weixz'></image>
+            <text class='hous_page'>订单</text>
+        </view>
+        <view class='weibu_css'>
+           <navigator url='/pages/jdunion/sign_out/signOutpage' redirect="true" hover-class='none'>
+             <image src='{{allImgs}}人未选中.png' class='weixz'></image>
+             <text class='hous_page'>我的</text>
+           </navigator>
+        </view>
+    </view> -->
+</view>

@@ -1,0 +1,11 @@
+backbutton.php 返回主页
+basicbutton.php (基础信息 账号信息 核心信息 猫池信息)
+dateinput.php 时间框
+excetiveselect.php 特殊的下拉框 （ge：是否存管）
+fileinput.php 文件框 （buttonText属性填写 ‘请选择’）
+lable.php 字段名
+textinput.php文本框
+ordinaryselect.php 普通的下拉框 （ge：运营商）
+panel.php信息的布局（eg：基础信息的整个div框）
+phonebutton.php 手机卡管理
+submitbutton.php提交框

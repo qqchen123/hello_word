@@ -1,0 +1,53 @@
+<!-- 报单流程 上传身份证信息-->
+<view>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class='customs_heard'>
+              <view class='waiyangma'>
+                <view class='waiyuan3'>
+                  <image src='{{allImgs}}完成.png' class='wangcimg'></image>
+              </view>
+            <text class='fileimage'>填写申贷信息</text>
+        </view>
+        <view class='line_css'></view>
+        <view class='wuwaiyan_css'>
+           <view class='waiyuan'>
+                  <view class='rund_nei'>2</view>
+              </view>
+           <text class='fileimage'>上传身份证信息</text>
+        </view>
+        <view class='line_css2'></view>
+         <view class='wuwaiyan_css2'>
+           <view class='rund_nei neiyuan_css'>3</view>
+           <text class='fileimage2'>填写房本信息</text>
+        </view>
+    </view>
+     <!-- 上传图片-->
+     <view class='real_information'>
+        <text class='home_address'>上传身份证正反面：</text>
+        <view class='address'>
+             <view class='jiah_css' bindtap="chooseimage" id="idNumber0">
+                <image src="{{allImgs}}加.png" class='jiah_tup'></image>
+                <text class='click_tup'>点击添加图片</text>
+             </view>
+             <view class='slt_tup'>
+                <image src='{{allImgs}}leftCead.jpg' class='wangcimg' class='imgs_careder'></image>
+                <image src="{{idNumber0}}" mode="aspecFill" class='imgs_careder'/>
+             </view>
+        </view>
+         <view class='address'>
+             <view class='jiah_css' bindtap="chooseimage" id='idNumber1'>
+                <image src="{{allImgs}}加.png" class='jiah_tup'></image>
+                <text class='click_tup'>点击添加图片</text>
+             </view>
+             <view class='slt_tup'>
+                 <image src='{{allImgs}}rigthCead.jpg' class='wangcimg' class='imgs_careder'></image>
+                 <image src="{{idNumber1}}" mode="aspecFill" class='imgs_careder'/>
+             </view>
+        </view>
+     </view>
+      <!-- 按钮 -->
+        <view>
+            <button class='assess_button' form-type='submit'>下一步</button>
+        </view>
+  </form>
+</view>

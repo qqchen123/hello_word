@@ -1,0 +1,103 @@
+/* pages/jdunion/bookingOrder.wxss */
+.order_head {
+  width:750rpx;
+  height: 100rpx;   
+  background: #F9F9F9;
+  margin-top: 0;
+  margin-left:0rpx; 
+}
+.has_been_assessed {
+  display: inline-block;
+  width: 372rpx;
+  height: 100rpx;
+  border: 3rpx #dadada solid;
+  border-left: 0rpx; 
+}
+.has_been_form {
+  display: inline-block;
+  border:3rpx #dadada solid;
+  border-right: 0rpx;
+}
+.been_assessed {
+  display: inline-block;
+  width: 240rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 130rpx;
+  font-size: 35rpx;
+}
+.bgcolor {
+  margin-top: 40rpx;
+  width: 750rpx;
+  /* height:100%; */
+  /* background: #F9F9F9; */
+}
+.assess {
+  position: relative;
+  width: 90%; 
+  height: 450rpx;
+  border: 2rpx solid gray;
+	display: inline-block;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  box-shadow: 0 5px 15px 0 rgba(151,167,191,.25);
+  border-radius: 10rpx;
+  margin-left: 35rpx;
+}
+.huantiao {
+  position: absolute;
+  width: 170rpx;
+  height: 60rpx;
+  margin-left: 530rpx;
+  margin-top: 15rpx;
+}
+.success_css {
+  position: absolute;
+  margin-left: 570rpx;
+  margin-top: 18rpx;
+  font-size: 22rpx;
+  color: white;
+}
+.suhomecss {
+  display: block;
+  font-size: 25rpx;
+  margin-left: 5%;
+  margin-top: 20rpx;
+}
+.top_order {
+  margin-top: 60rpx;
+}
+.make_entry {
+  position: absolute;
+  width: 25%;
+  height: 60rpx;
+  font-size: 25rpx;
+  background: #01A3D4;
+  color: white;
+  margin-left: 65%;
+}
+/* 尾部 */
+/* .weibu {
+  position:fixed;
+  bottom:0;
+  width: 750rpx;
+  height: 150rpx;
+  background: #f2f2f2;
+}
+.weibu_css {
+  display: inline-block;
+  margin-left: 16%;
+  margin-top: 30rpx;
+}
+.weixz {
+  width: 50rpx;
+  height: 45rpx;
+  margin-left: 5%;
+}
+.hous_page {
+  display: inline-block;
+  font-size: 25rpx;
+  color: #989898;
+  margin-left: 5%;
+} */
+

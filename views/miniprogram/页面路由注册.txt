@@ -1,0 +1,16 @@
+    "pages/jdunion/order/all_order_page" //新版订单页面
+    "pages/jdunion/login/login", //登录页面
+    "pages/jdunion/homepage", //首页
+    "pages/jdunion/bookingOrder",//预约订单
+    "pages/jdunion/customsdeform", //评估结果
+    "pages/jdunion/dindan",       //弹窗案例
+    "pages/jdunion/text",
+    "pages/jdunion/systemassess",      //系统评估
+    "pages/jdunion/housinformation",  //报单流程（上传房本信息）
+    "pages/jdunion/pendingEntry",    //预约页面
+    "pages/jdunion/creadID",        //身份证信息填写页面
+    "pages/jdunion/customsform",   //报单流程（申贷信息）
+    "pages/jdunion/insAudits",    //机构审核评定页面
+    "pages/jdunion/assresults",  //搜索框
+    "pages/logs/logs"  //日志
+    "pages/jdunion/sign_out/signOutpage" //我的（退出页面）

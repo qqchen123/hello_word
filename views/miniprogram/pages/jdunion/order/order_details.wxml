@@ -1,0 +1,65 @@
+<!-- 订单详情 -->
+<view>
+    <view class='assess assess_css'>
+        <!-- 补件 -->
+        <view class='pa_fail'>初评失败</view>
+        <label class='suhomecss'>所处阶段：报单</label>
+        <label class='suhomecss'>原因：材料不清晰</label>
+        <button class='patch'>补 件</button>
+    </view>
+
+    <view class='assess'>
+        <!-- 订单内容 -->
+        <label class='suhomecss'>订单编号：{{order_detal.order_num}}</label>
+        <label class='suhomecss'>申请人：{{order_detal.user_name}}</label>
+        <label class='suhomecss'>职业类型：股东</label>
+        <label class='suhomecss'>可贷金额：{{order_detal.ZheKouZongJia ? order_detal.ZheKouZongJia+'万': '暂无数据'}}</label>
+        <label class='suhomecss'>申请期限：6个月</label>
+        <label class='suhomecss'>小区名称：{{order_detal.full_house_name=='undefined'? '暂无数据': order_detal.full_house_name}}</label>
+    </view>
+    <view class='time_margin'>
+        <!-- 时间轴部分 -->
+        <!-- 报单信息 -->
+        <view class="form_information" data-index="0" bindtap='changeToggle'>
+            <view class="left">
+                <text class="iconfont {{selectedFlag[0]?'icon-yuanxing1':'icon-yuanxing'}}"></text>
+            </view>
+            <text class='waibain_line'></text>
+            <view class="df_information">报单信息
+                <label class='lable_time_css'>{{order_detal.bdc_time}}</label>
+            </view>
+            <view class="right">
+                <text class="iconfont {{selectedFlag[0]?'icon-icon-shangjiantou':'icon-icon-xiala'}}"> </text>
+            </view>
+        </view>
+        <view hidden="{{!selectedFlag[0]}}" class='show_time_css'>
+            <view class='line_left'>
+                <label class='df_information df_house_class'>房产类型 ：{{order_detal.house_type}}</label>
+                <label class='df_information df_house_class'>借款类型 ：{{order_detal.get_money_term}}</label>
+                <label class='df_information df_house_class'>抵押类型 ：{{order_detal.di_ya_type}}</label>
+                <label class='df_information df_house_class'>订单产品 ：{{order_detal.product_name==null ? '暂无数据' : order_detal.product_name}}</label>
+            </view>
+        </view>
+        <!-- 进件信息 -->
+        <view class="form_information" data-index="1" bindtap='changeToggle'>
+            <view class="left">
+                <text class="iconfont {{selectedFlag[1]?'icon-yuanxing1':'icon-yuanxing'}}"> </text>
+            </view>
+            <view class="df_information">进件信息
+                <label class='lable_time_css'>2018-12-12 17:10:52</label>
+            </view>
+            <view class="right">
+                <text class="iconfont {{selectedFlag[1]?'icon-icon-shangjiantou':'icon-icon-xiala'}}"> </text>
+            </view>
+        </view>
+        <view hidden="{{!selectedFlag[1]}}" class='show_time_css'>
+            <view class='line_left'>
+                <label class='df_information df_house_class'>房产类型 ：公寓</label>
+                <label class='df_information df_house_class'>借款类型 ：清单</label>
+                <label class='df_information df_house_class'>抵押类型 ：一抵</label>
+                <label class='df_information df_house_class'>订单产品 ：房抵贷（A1，1号）</label>
+            </view>
+        </view>
+
+    </view>
+</view>

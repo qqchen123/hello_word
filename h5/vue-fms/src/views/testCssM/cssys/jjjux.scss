@@ -1,0 +1,20 @@
+.talkbubble {
+	width: rem(100);
+	height: rem(60);
+	background: green;
+	position: relative;
+	-moz-border-radius: rem(10);
+	-webkit-border-radius: rem(10);
+	border-radius: rem(10);
+}
+.talkbubble:before {
+	content:"";
+	position: absolute;
+	right: 100%;
+	top: rem(26);
+	width: 0;
+	height: 0;
+	border-top: rem(13) solid transparent;
+	border-right: rem(26) solid green;
+	border-bottom: rem(13) solid transparent;
+}

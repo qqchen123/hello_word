@@ -1,0 +1,51 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+/* 矢量图代码的引用 */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1546571091089'); /* IE9 */
+  src: url('iconfont.eot?t=1546571091089#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAANYAAsAAAAABzwAAAMMAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDKAqBVIFTATYCJAMUCwwABCAFhG0HXBtpBhEVlMNkfytuXH+1QSQFy+ilBTYxO9gjncjL8I7yjYGTNhWa/2bTcvKhjKzXC0FUa9mzBw8AKkgegBSiIrBR7GJkhEz5VCygBJJRaMja7k0wKx06SatqgqqSxCOjQWNkRirijZEJ7SFmd1slBZRoW+4BZvL8qAWATg7wkGkeSC2WV0xJJiUEHvPWptT1cAgXYZiS8+C7PCM/9uXDaAqe/qbIrXsmUaXn/2JDDhnkGXWpfgV6kJKsncWldfuESmucp58AhgMUoN7xKUABTUDinkV2EXfiIh5DADtpFEDqXG198OigVQLIYmFmDL6QQkc3qlYEs+GgDjmGgVWNyQFH0fflHUXwQGFoQBu7pusncT4xP4HqK8Mgp5AGQT5uABpQANBBBhtLA1CIIWjYSzR5YF+zBJ4EBZ4YHkT2GlZo+/7zxATqdALQJmcMeKIEAk8sgYInjkCDJ55AhyfB8U86DQDsRW3pvEoGkF/wGzr1pqql5tqENbXI2eQn5l8PDlPTN0+m+77xw1IgNxz5re2fz5PrdXC7TS92rf5vT3smXLOdvSO+K8UwK9toedvI9rCtvxFB5f/ZSpM/6B1H/Iqdik9iFs4kjDqqLm2SdAC0uHwBqEsS8H+ylG/+GzznPmnolzVoAFwH9keJ/1Ng7WBFAdj+he1Aje47kWLobj+1uREDP3ClAuzYgX9QzI/HeQIhcC8IVkIjIhZSGTSsZNA6XwADBxUwsVIJO/loPO4ggCUoRBcAediVIHhxCoWbM2h4cUHr/AMMwviEiZegYGdA5EIHWQRGlwgXxh3WP+gtBkFCXMbdL5SHWyjvjMQfUtZZ6JuuXJ0xIM2xJZ9yYBYgKHqYpOfQuQiJosGNG8WcxrYVTS9qtuiLEoQL4w7rH/QWg+DDuax8/oXycAt1qHqmP6Ssx4e+6QD07Asg1b3oyaccmAUIih4maR46FyE1zzO4caNGFNLY4kEC6mvWD/hvPAI4aKsJSVAETTAEi5bR3abtqVrrWy9uqdL6rJYgjWY7OB7PjyXcOsiiAA==') format('woff2'),
+  url('iconfont.woff?t=1546571091089') format('woff'),
+  url('iconfont.ttf?t=1546571091089') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1546571091089#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:23px;
+}
+
+.icon-select:before {
+  content: "\e605";
+  color: #00B7EE;
+}
+
+.icon-icon-xiala:before {
+  content: "\e606";
+  color: #2E2E2E;
+}
+
+.icon-icon-shangjiantou:before {
+  content: "\e607";
+  color: #2E2E2E;
+}
+
+.icon-yuanxing:before {
+  content: "\e608";
+  color: #E6E6E6;
+}
+
+.icon-yuanxing1:before {
+  content: "\e609";
+  color:#02B7F0; 
+}
+

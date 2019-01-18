@@ -1,0 +1,7 @@
+@charset "UTF-8";
+.grid .panel-tool{margin-top: -8px}
+.grid .panel-filter{background-color:#fbfcfc; padding: 10px; border-bottom: 1px solid #DDDDDD;}
+.grid .panel-body{padding:0}
+.grid .panel-body table{margin-bottom: 0}
+.grid .panel-body table thead th{border-top: none;border-bottom: 1px solid #000;background: #fff;text-align: center}
+.grid .panel-body table td,.grid .panel-body table th{line-height: 28px}

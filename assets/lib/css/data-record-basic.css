@@ -1,0 +1,138 @@
+td {
+    border-top: none !important;
+    vertical-align: middle !important;
+}
+
+.fred{
+    color:red;
+}
+
+.tlabel {
+    text-align: right;
+    background-color: #EEEEEE;
+}
+
+.ml2 {
+    margin-right: 2em
+}
+
+.ib {
+    display: inline-block;
+}
+
+.w2 {
+    width:49%;
+}
+
+.w3 {
+    width:32%;
+}
+
+.w4 {
+    width:24%;
+}
+
+.dn {
+    display: none;
+}
+
+.dnlogic {
+    display: none;
+}
+
+.fitem {
+    margin-bottom: 5px;
+}
+.fitem lable {
+    display: inline-block;
+    width: 100px;
+}
+
+.w100 {
+    width: 100px;
+}
+
+.w90 {
+    width: 90px;
+}
+
+.w80 {
+    width: 80px;
+}
+
+.w60 {
+    width: 60px;
+}
+
+
+:focus {
+    outline:0;
+}
+
+button {
+    outline:none;
+}
+
+.userinfo {
+        width: 160px;
+        height: 25px;
+        border-radius:5px;
+        border:1px #DCDCDC solid;
+        margin-right: 30px;
+    }
+.textbox-text {
+    width: 160px !important;
+    height: 25px !important;
+    border-radius:5px;
+    border:1px #DCDCDC solid;
+    margin-right: 30px;
+    display:inline-block;
+    margin-top:5px;
+}
+
+.color-y {
+    color: #F7DE8F;
+}
+
+.color-c {
+    color: #CCC;
+}
+
+.color-b {
+    color: #2874e5;
+}
+
+.combo input {
+    /*background-color: #D8E4BC !important;*/
+    /*绿*/
+} 
+
+.textbox .textbox-prompt {
+    /*background-color: #FCD5B4 !important;*/
+    /*橘*/
+}
+
+.bgc-g {
+    /*background-color: #B1A0C7 !important;*/
+    /*紫*/
+    /*color: #000 !important;*/
+}
+
+.combo {
+    width: 160px;
+}
+
+.filebox {
+    width: 160px;
+}
+
+#simg {
+    max-width:100%;
+    max-height:100%;
+}
+
+.border-dotted{
+    border: 1px dotted black;
+    border-width: 1px 0px;
+    margin-bottom: 5px;
+}

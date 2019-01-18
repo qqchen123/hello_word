@@ -1,0 +1,66 @@
+.heart {
+	position: relative;
+	width: rem(150);
+	height: rem(90);
+}
+.heart:before,
+.heart:after {
+	position: absolute;
+	content: "";
+	left: rem(50);
+	top: 0;
+	width: rem(50);
+	height: rem(80);
+    background: -prefix-linear-gradient(left,#FFE4E1,#FFB6C1);
+    background: linear-gradient(to right,#FFB6C1,#FFE4E1);
+	-moz-border-radius: rem(40) rem(40) 0 0;
+	border-radius: rem(50) rem(50) 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+}
+.heart:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+}
+.heart2 {
+	position: relative;
+	width: rem(150);
+	height: rem(90);
+}
+.heart2:before,
+.heart2:after {
+	position: absolute;
+	content: "";
+	left: rem(50);
+	top: 0;
+	width: rem(50);
+	height: rem(80);
+    background: -prefix-linear-gradient(left,#E0FFFF,#DB7093);
+    background: linear-gradient(to right,#E6E6FA,#E0FFFF);
+	-moz-border-radius: rem(40) rem(40) 0 0;
+	border-radius: rem(50) rem(50) 0 0;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 0 100%;
+}
+.heart2:after {
+	left: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+}

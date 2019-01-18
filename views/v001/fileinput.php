@@ -1,0 +1,1 @@
+ <input class="{{data['input_class']}}" name="{{data['input_name']}}" id="{{data['input_id']}}" data-options="buttonText:'选择文件', accept:['image/png', 'image/jpeg', 'image/gif'] "></input><span class="img-btn" data-src=""></span>

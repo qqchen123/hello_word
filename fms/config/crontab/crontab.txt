@@ -1,0 +1,16 @@
+# 猫池定时任务
+*/1 * * * * /usr/local/php/bin/php /www/fms/index.php CatPool sms_in_sqlserver >> /www/shared/logs/catpool_$(date +\%Y\%m\%d).log #每分钟猫池增量短信mysql入sqlserver
+*/5 * * * * /usr/local/php/bin/php /www/fms/index.php CatPool sim_in_sqlserver >> /www/shared/logs/catpool_$(date +\%Y\%m\%d).log #每5分钟猫池卡的状态mysql入sqlserver
+0 8,9 * * * /usr/local/php/bin/php /www/fms/index.php CatPool update_tc_money >> /www/shared/logs/catpool_$(date +\%Y\%m\%d).log #每天7、8点短信获取套餐价格入mysql
+0 9,10 * * * /usr/local/php/bin/php /www/fms/index.php CatPool update_money >> /www/shared/logs/catpool_$(date +\%Y\%m\%d).log #每天8、9点短信获取套餐价格入mysql
+# 0 9 * * * php /www/fms/index.php CatPool autoCheckAndPay >> /www/shared/logs/catpool_$(date +\%Y\%m\%d).log #每天9点轮询余额 低于阀值充值（含update_money）
+# 银信数据 电子账单爬取
+15 6,20 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/yx/getalldata 'all'  >> /www/shared/logs/yxrobots_getalldata_$(date +\%Y\%m\%d).log #更新银信用户电子账单、账户概况、还款中信息
+0 4 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/yx/getAccountHaveMoney 'all'  >> /www/shared/logs/yx_用户余额、冻结金额_$(date +\%Y\%m\%d).log #每天4点更新银信用户余额、冻结金额
+0 5 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/yx/getAccountAssessment 'all'  >> /www/shared/logs/yx_是否做风险问卷_$(date +\%Y\%m\%d).log #每天5点更新银信用户是否做风险问卷
+0 6 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/yxz/get_out_money  >> /www/shared/logs/yx_总账户的出借列表_$(date +\%Y\%m\%d).log #每天6点更新银信总账户的出借列表及明细
+0 7 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/yxz/get_in_money  >> /www/shared/logs/yx_总账户的借款列表_$(date +\%Y\%m\%d).log #每天7点更新银信总账户的借款列表及明细
+15 5,19 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/rep_backplan/get_account  >> /www/shared/logs/yx_已完成的还款计划列表_$(date +\%Y\%m\%d).log #每天7点更新银信总账户的借款列表及明细
+30 5,19 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/rep_contract/get_account  >> /www/shared/logs/yx_已完成的合同_$(date +\%Y\%m\%d).log #每天7点更新银信总账户的借款列表及明细
+45 5,19 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/rep_finish/get_account  >> /www/shared/logs/yx_已完成的信息列表_$(date +\%Y\%m\%d).log #每天7点更新银信总账户的借款列表及明细
+20 7,19 * * * /usr/local/php/bin/php /www/fms/index.php /reptiles/YxViewData/update_yxorder  >> /www/shared/logs/yx_银信还款计划视图_$(date +\%Y\%m\%d).log #每天7点20更新银信还款计划视图
